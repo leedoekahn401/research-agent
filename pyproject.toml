@@ -1,0 +1,22 @@
+[project]
+name = "research-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "apscheduler>=3.10.4",
+    "chromadb>=1.5.5",
+    "google-genai>=1.69.0",
+    "hdbscan>=0.8.42",
+    "ipython>=9.12.0",
+    "numpy>=2.4.4",
+    "pandas>=2.3.3",
+    "pydantic>=2.12.5",
+    "pymongo[srv]>=4.16.0",
+    "python-dotenv>=1.2.2",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.17.1",
+    "streamlit>=1.55.0",
+    "umap-learn>=0.5.11",
+]

@@ -71,9 +71,9 @@ Create a `.env` file in the root directory:
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
+DB_URI=your_mongodb_uri
 ```
 
-*Note: MongoDB URI and other constants are currently managed in `config.py`.*
 
 ### 4. Running the Pipeline
 
@@ -121,7 +121,7 @@ For each cluster:
 2.  The content is passed to Gemini with a specialized prompt to extract a **Label**, **Core Topic**, and a **Concise Summary**.
 
 ---
+## 👋 About Me
 
-## 📜 License
+For inquiries or collaborations, feel free to reach out at: [ducanh4012006@gmail.com](mailto:ducanh4012006@gmail.com)
 
-[MIT License](LICENSE) (or specify your own)

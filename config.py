@@ -25,6 +25,7 @@ logger = logging.getLogger("research_agent")
 # ─────────────────────────────────────────────
 load_dotenv(override=True)
 
+MONGO_URI = os.getenv("DB_URI")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     raise EnvironmentError("GEMINI_API_KEY not found in environment.")
@@ -38,11 +39,6 @@ EMBEDDING_DIMENSIONALITY = 768
 BATCH_SIZE = 100
 MIN_DOCS_FOR_CLUSTERING = 5
 ROLLING_WINDOW_HOURS = 24
-
-MONGO_URI = (
-    "mongodb+srv://ducanh4012006_db_user:5zEVVC3o7Sjnl2le"
-    "@cluster0.dwzpibi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-)
 
 # ─────────────────────────────────────────────
 # Clients  (initialised once at import time)
